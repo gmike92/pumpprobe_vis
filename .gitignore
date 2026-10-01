@@ -1,0 +1,28 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- Machine-specific config (per-stage t0 / counts-per-mm, serials) ---
+pumpprobe_config.json
+
+# --- Measurement data (saved scans / maps) ---
+*.csv
+*.npz
+*.npy
+*.json
+saved_images/
+scan_data/
+
+# --- Reference material (separate repos / large, not part of this app) ---
+repo/
+repo.zip
+local_reference/
+
+# --- OS / editor cruft ---
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak
+.vscode/

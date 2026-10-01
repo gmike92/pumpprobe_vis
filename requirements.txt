@@ -1,0 +1,21 @@
+# Core GUI + numerics
+numpy
+pyqtgraph
+PyQt6            # Qt binding for pyqtgraph.Qt (PySide6 also works)
+
+# SR865A lock-in amplifier
+qcodes
+pyvisa           # plus a VISA backend, e.g. NI-VISA, on the machine
+
+# Thorlabs delay stage (Kinesis backend)
+pylablib
+
+# Ocean Optics / Ocean Insight spectrometer
+seabreeze        # python-seabreeze; the pyseabreeze backend needs pyusb
+pyusb
+
+# NOTE:
+#  - thorlabs_apt is intentionally NOT used (its DLL crashes on enumeration);
+#    the app drives the stage via pylablib/Kinesis only.
+#  - OceanDirect SDK (optional) enables additional Ocean Insight models if its
+#    `oceandirect` Python package is installed.
